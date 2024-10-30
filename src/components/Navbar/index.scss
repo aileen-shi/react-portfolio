@@ -1,11 +1,13 @@
-@import "../../App.scss";
-
+@import '../../assets/styles/variables';
 
 .nav-bar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    height: 7rem;
-    background-color: $white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 7rem;
+  background-color: $white;
 
+  nav {
+    display: inline-block;
+  }
 }

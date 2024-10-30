@@ -1,10 +1,4 @@
-$primary-color: #ffd700;
-$text-color: #333353;
-$yellow: #F7E459;
-$red: #EE6067;
-$blue: #5EBFC3;
-$green: #84D768;
-$white: #F8EFDC; 
+@import './assets/styles/variables';
 
 @import 'animate.css';
 
@@ -33,7 +27,9 @@ $white: #F8EFDC;
   src: url('./assets/fonts/Quicksand-SemiBold.ttf') format('truetype');
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
   font-family: 'Quicksand Regular';
 }
 
