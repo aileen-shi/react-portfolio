@@ -4,10 +4,87 @@
   width: 100%;
   position: fixed;
   top: 0;
-  height: 7rem;
+  height: 11rem;
   background-color: $white;
+  border-bottom: 5px solid $text-color;
 
-  nav {
-    display: inline-block;
-  }
+    .nav-content {
+    margin: 1rem 10rem 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        .link {
+            text-decoration: none;
+        }
+        
+
+        h1 {
+            font-size: 3.5rem;
+            color: $text-color;
+        }
+
+        nav {
+            display: inline-block;
+
+            ul {
+                display: flex;
+                gap: 5rem;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+
+                li {
+                    display: inline;
+
+                    button {
+                        padding: 1rem 2rem;
+                        border-radius: 30px;
+                        color: $text-color;
+                        border: 2px solid $text-color;
+                        font-size: 3rem;
+                        box-shadow: -10px 5px;
+                        transition: box-shadow 0.3s ease-in-out;
+                            }
+                    
+                    button:hover, button:active {
+                        box-shadow: -5px 2px;
+                        transition: box-shadow 0.3s ease-in-out;
+                            }
+                    
+                    #about-button {
+                        background-color: $red;
+                            }
+                    
+                    #projects-button {
+                        background-color: $green;
+                    }
+                    
+                    #contact-button {
+                        background-color: $blue;
+                    }
+                    
+            }
+            
+        }
+        .icon {
+            width: 8rem;
+            height: 8rem;
+            display: none;
+        }
+        .icon path {
+            stroke: $text-color;
+        }
+    }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-content nav ul li button {
+        display: none;
+    }
+    .nav-bar .nav-content nav .icon {
+        display: block;
+    }
 }
