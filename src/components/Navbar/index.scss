@@ -46,16 +46,17 @@
                         font-size: 3rem;
                         box-shadow: -10px 5px;
                         transition: box-shadow 0.3s ease-in-out;
-                            }
+                    }
                     
                     button:hover, button:active {
+                        cursor: pointer;
                         box-shadow: -5px 2px;
                         transition: box-shadow 0.3s ease-in-out;
-                            }
+                    }
                     
                     #about-button {
                         background-color: $red;
-                            }
+                    }
                     
                     #projects-button {
                         background-color: $green;
@@ -63,6 +64,9 @@
                     
                     #contact-button {
                         background-color: $blue;
+                    }
+                    #burger-icon {
+                        cursor: pointer;
                     }
                     
             }
