@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import './index.scss';
 import { ReactComponent as BurgerMenu } from '../../assets/icons/BurgerMenu.svg';
+import MobileNav from '../MobileNav';
 import { useState } from "react";
 
 const Navbar = () => {
@@ -40,8 +41,11 @@ const Navbar = () => {
                     </ul>
                 </nav>
             </div>
+                {hamburgerOpen === true && (
+                    <MobileNav />
+                )}
         </div>
     )
 }
 
-export default Navbar
+export default Navbar;

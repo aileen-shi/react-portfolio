@@ -9,10 +9,10 @@
   border-bottom: 5px solid $text-color;
 
     .nav-content {
-    margin: 1rem 10rem 0 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        margin: 1rem 10rem 0 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .link {
             text-decoration: none;
@@ -69,18 +69,20 @@
                         cursor: pointer;
                     }
                     
-            }
+                }
             
+            }
+
+            .icon {
+                width: 8rem;
+                height: 8rem;
+                display: none;
+            }
+
+            .icon path {
+                stroke: $text-color;
+            }
         }
-        .icon {
-            width: 8rem;
-            height: 8rem;
-            display: none;
-        }
-        .icon path {
-            stroke: $text-color;
-        }
-    }
     }
 }
 
