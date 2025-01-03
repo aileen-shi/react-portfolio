@@ -1,15 +1,16 @@
 @import '../../assets/styles/variables';
 
 .nav-bar {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   height: 11rem;
   background-color: $white;
   border-bottom: 5px solid $text-color;
+  z-index: 100;
 
     .nav-content {
-        margin: 1rem 10rem 0 5rem;
+        margin: 1rem 5rem 0 5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -65,7 +66,7 @@
                     #contact-button {
                         background-color: $blue;
                     }
-                    #burger-icon {
+                    #burger-icon, #exit-icon {
                         cursor: pointer;
                     }
                     
@@ -87,10 +88,11 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .nav-content nav ul li button {
+    .nav-content nav ul li:not(:last-child) {
         display: none;
     }
     .nav-bar .nav-content nav .icon {
         display: block;
     }
+
 }

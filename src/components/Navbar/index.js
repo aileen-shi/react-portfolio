@@ -1,15 +1,18 @@
 import { Link, NavLink } from 'react-router-dom';
 import './index.scss';
 import { ReactComponent as BurgerMenu } from '../../assets/icons/BurgerMenu.svg';
+import { ReactComponent as Exit } from '../../assets/icons/exit.svg';
 import MobileNav from '../MobileNav';
 import { useState } from "react";
 
 const Navbar = () => {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
+    const [exit, setExit] = useState(false);
+    const [visible, setVisible] = useState(null);
 
     const toggleHamburger = () => {
-        console.log("clicked");
         setHamburgerOpen(!hamburgerOpen);
+        setExit(!hamburgerOpen);
     }
 
     return (
@@ -38,6 +41,12 @@ const Navbar = () => {
                         <li>
                             <BurgerMenu className="icon" id="burger-icon" onClick={toggleHamburger}></BurgerMenu>
                         </li>
+
+                        {exit === true && (
+                            <li>
+                            <Exit className="icon" id="exit-icon" onClick={toggleHamburger}></Exit>
+                            </li>
+                        )}
                     </ul>
                 </nav>
             </div>

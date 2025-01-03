@@ -2,13 +2,14 @@
 
 .mobile-nav {
     display: none;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 11rem;
     height: 100vh;
     background-color: $white;
     border-top: 5px solid $text-color;
-    
+    z-index: 100;
+
     ul {
         margin-top: 5rem;
         list-style-type: none;
@@ -17,6 +18,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
         
         li {
             position: relative; 
@@ -56,8 +58,8 @@
                 left: 0;
                 width: 110vw;
                 height: 2px;
-                transform: translateX(-50vw);
                 background-color: $text-color;
+                transform: translateX(-50vw);
             }
 
             &:last-child::after {

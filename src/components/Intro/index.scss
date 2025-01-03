@@ -1,0 +1,101 @@
+@import '../../assets/styles/variables';
+
+.intro {
+    padding-top: 4rem;
+    margin-bottom: 5rem;
+    position: relative;
+
+    .dots {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        color: $blue-darker;
+        height: 10rem;
+        width: 10rem;
+        z-index: -5;
+    }
+
+    .portrait-box, .title-box {
+        background-color: $white;
+        color: $text-color;
+        border: 5px solid $text-color;
+        box-shadow: -10px 20px;
+    }
+    
+    .title-box {
+        margin-left: 15vw;
+        margin-top: 2rem;
+        padding-left: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        width: 30vw;
+    
+        h1 {
+            font-size: 4rem;
+            margin: 1rem;
+        }
+    
+        h5 {
+            padding-top: 1rem;
+            font-size: 2rem;
+            margin: 1rem;
+        }
+    }
+
+    .portrait-box {
+        margin-top: -2rem;
+        margin-left: 55vw;
+        width: 30vw;
+        height: 20rem;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 40rem;
+        left: 20vw;
+        height: 10rem;
+        width: 10rem;
+
+        path {
+            fill: $text-color;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .intro { 
+        padding-top: 2rem;
+
+        .dots {
+            top: 1rem;
+            left: 1rem;
+        }
+
+        .title-box {
+            padding: 1rem;
+            box-shadow: -10px 10px;
+
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 0;
+            }
+
+            h5 {
+                margin-top: 0;
+                font-size: 1.5rem;
+            }
+        }
+
+        .portrait-box {
+            margin-top: 7rem;
+            margin-left: 40vw;
+            width: 50vw;
+            height: 15rem;
+        }
+
+        .arrow {
+            left: 10vw;
+            top: 35rem;
+        }
+    }
+}
