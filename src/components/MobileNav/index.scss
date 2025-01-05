@@ -18,7 +18,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+        overflow-x: hidden;
+        padding-bottom: 1rem;
         
         li {
             position: relative; 
@@ -56,7 +57,7 @@
                 position: absolute;
                 bottom: -4rem;
                 left: 0;
-                width: 110vw;
+                width: 120vw;
                 height: 2px;
                 background-color: $text-color;
                 transform: translateX(-50vw);

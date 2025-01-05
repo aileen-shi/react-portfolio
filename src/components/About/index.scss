@@ -1,0 +1,161 @@
+@import '../../assets/styles/variables';
+
+.about {
+    padding-top: 30rem;
+    padding-bottom: 20rem;
+    margin-bottom: 5rem;
+    position: relative;
+
+    .icon {
+        z-index: -1;
+        position: absolute;
+    }
+
+    .wavy {
+        height: 30rem;
+        width: 30rem;
+        top: 12rem;
+        left: 5rem;
+
+        path {
+            fill: $blue-darker;
+        }
+    }
+
+    .radial {
+        height: 30rem;
+        width: 30rem;
+        top: 40rem;
+        left: 71vw;
+
+        path {
+            fill: $green;
+        }
+    }
+
+    .hole-flower {
+        height: 30rem;
+        width: 30rem;
+        top: 85rem;
+        left: 12vw;
+
+        path {
+            fill: $red;
+        }
+    }
+
+    .card {
+        background-color: $white;
+        color: $text-color;
+        border: 5px solid $text-color;
+        margin: auto;
+        margin-bottom: 5rem;
+        width: 60vw;
+        padding-bottom: 2rem;
+
+        .banner {
+            background-color: red;
+            padding-left: 1rem;
+            width: 20rem;
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .bio-card {
+        .bio-banner {
+            background-color: $red;
+        }
+        
+        .bio-text {
+            font-size: 2.5rem;
+            margin: 0 4rem;
+        }
+    }
+
+    .skill-card {
+
+        .skill-banner {
+            background-color: $green; 
+        }
+
+        .button-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            .col {
+                padding: 1rem;
+                flex: 1 1 calc(25% - 1rem);
+                max-width: calc(25% - 1rem);
+                min-width: 8rem;
+                background-color: $blue;
+                border-radius: 15px;
+                border: 2px solid $text-color;
+                font-size: 2.5rem;
+                text-align: center;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about {
+        .hole-flower {
+            left: 1rem;
+        }
+
+        .card {
+
+            .bio-text {
+                font-size: 2rem;
+            }
+
+            .banner {
+
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+
+            .button-grid {
+                gap: 0.5rem;
+
+                .col {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about {
+        .wavy {
+            top: 15rem;
+            left: 1rem;
+            width: 22rem;
+            height: 22rem;
+        }
+        
+        .card {
+            
+            .banner {
+                width: 15rem;
+            }
+
+            .button-grid {
+                
+                .col {
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}

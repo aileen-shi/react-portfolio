@@ -1,6 +1,7 @@
 import './index.scss';
 import Navbar from '../Navbar';
 import Intro from '../Intro';
+import About from '../About';
 
 const Layout = () => {
     return (
@@ -8,6 +9,7 @@ const Layout = () => {
             <Navbar />
             <div className="body-content">
                 <Intro />
+                <About />
             </div>
         </>
     )   
