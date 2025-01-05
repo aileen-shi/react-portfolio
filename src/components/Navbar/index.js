@@ -8,7 +8,6 @@ import { useState } from "react";
 const Navbar = () => {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
     const [exit, setExit] = useState(false);
-    const [visible, setVisible] = useState(null);
 
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
@@ -18,25 +17,25 @@ const Navbar = () => {
     return (
         <div className="nav-bar">
             <div className="nav-content">
-                <Link className="link" to="/">
+                <a href="#intro">
                     <h1>aileen</h1>
-                </Link>
+                </a>
                 <nav>
                     <ul>
                         <li>
-                            <NavLink exact="true" activeclassname="active" to="/about">
+                            <a href="#about">
                                 <button id="about-button">about</button>
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
-                            <NavLink exact="true" activeclassname="active" to="/projects">
+                            <a>
                                 <button id="projects-button">projects</button>
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
-                            <NavLink exact="true" activeclassname="active" to="/contact">
+                            <a>
                                 <button id="contact-button">contact</button>
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
                             <BurgerMenu className="icon" id="burger-icon" onClick={toggleHamburger}></BurgerMenu>

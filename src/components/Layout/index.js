@@ -8,8 +8,12 @@ const Layout = () => {
         <>
             <Navbar />
             <div className="body-content">
-                <Intro />
-                <About />
+                <section id="intro">
+                    <Intro />
+                </section>
+                <section id="about">
+                    <About />
+                </section>
             </div>
         </>
     )   

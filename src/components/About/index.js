@@ -32,6 +32,7 @@ const About = () => {
                     <div class="col">HTML</div>
                     <div class="col">CSS</div>
                     <div class="col">JavaScript</div>
+                    <div class="col">Django</div>
                     <div class="col">SQL</div>
                     <div class="col">AWS</div>
                     <div class="col">Git</div>
