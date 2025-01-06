@@ -3,6 +3,37 @@
 .project-container {
     position: relative;
 
+    .varied-dots {
+        position: absolute;
+        top: -5rem;
+        left: 15rem;
+        z-index: -1;
+    }
+
+    .sparkle {
+        position: absolute;
+        width: 10rem;
+        top: 25rem;
+        left: 80vw;
+        z-index: -1;
+
+        path {
+            fill: $red;
+        }
+    }
+
+    .shape {
+        position: absolute;
+        top: 40rem;
+        left: 10rem;
+        width: 5rem;
+        z-index: -1;
+
+        path {
+            fill: $blue-darker;
+        }
+    }
+
     .card {
         background-color: $white;
         color: $text-color;

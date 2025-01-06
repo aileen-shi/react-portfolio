@@ -2,6 +2,9 @@ import './index.scss';
 import { useState } from "react";
 import pandasoft from '../../assets/images/pandasoft.png';
 import test from '../../assets/images/test.png';
+import { ReactComponent as VariedDots } from '../../assets/icons/varied-dots.svg';
+import { ReactComponent as Sparkle } from '../../assets/icons/sparkle.svg';
+import { ReactComponent as Shape } from '../../assets/icons/shape.svg';
 
 const Projects = () => {
     const [slideIndex, setSlideIndex] = useState(0);
@@ -31,7 +34,11 @@ const Projects = () => {
 
     return (
         <div className="project-container">
-            
+
+            <VariedDots className="varied-dots"/>
+            <Sparkle className="sparkle" />
+            <Shape className="shape" />
+
             <div className="card">
                 <div className="banner">
                     <h1>projects</h1>
