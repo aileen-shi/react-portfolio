@@ -2,6 +2,7 @@ import './index.scss';
 import Navbar from '../Navbar';
 import Intro from '../Intro';
 import About from '../About';
+import Projects from '../Projects';
 
 const Layout = () => {
     return (
@@ -13,6 +14,9 @@ const Layout = () => {
                 </section>
                 <section id="about">
                     <About />
+                </section>
+                <section id="projects">
+                    <Projects />
                 </section>
             </div>
         </>

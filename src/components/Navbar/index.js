@@ -1,4 +1,3 @@
-import { Link, NavLink } from 'react-router-dom';
 import './index.scss';
 import { ReactComponent as BurgerMenu } from '../../assets/icons/BurgerMenu.svg';
 import { ReactComponent as Exit } from '../../assets/icons/exit.svg';
@@ -28,7 +27,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href="#projects">
                                 <button id="projects-button">projects</button>
                             </a>
                         </li>

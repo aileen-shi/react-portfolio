@@ -6,14 +6,14 @@ const MobileNav = () => {
         <div className="mobile-nav">
             <ul>
                 <li>
-                    <NavLink exact="true" activeclassname="active" to="/about">
+                    <a href="#about">
                         <button id="about-button">about</button>
-                    </NavLink>
+                    </a>
                 </li>
                 <li>
-                    <NavLink exact="true" activeclassname="active" to="/projects">
+                    <a href="#projects">
                         <button id="projects-button">projects</button>
-                    </NavLink>
+                    </a>
                 </li>
                 <li>
                     <NavLink exact="true" activeclassname="active" to="/contact">

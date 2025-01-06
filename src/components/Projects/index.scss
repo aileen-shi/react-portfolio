@@ -1,0 +1,80 @@
+@import '../../assets/styles/variables';
+
+.project-container {
+    position: relative;
+
+    .card {
+        background-color: $white;
+        color: $text-color;
+        border: 5px solid $text-color;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        width: 40vw;
+
+        .banner {
+            background-color: $blue;
+            padding-left: 1rem;
+            width: 20rem;
+
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 0;
+            }
+        }
+
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+            max-width: 100%;
+            padding: 5%;
+
+            .slide {
+                width: 80%;
+                margin: auto;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .button-container {
+                margin: 4rem auto 0 auto;
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+
+                .button {
+                    padding: 1rem 2rem;
+                    border: 1.5px solid $text-color;
+                    box-shadow: -3px 5px;
+                    color: $text-color;
+                    font-size: 3rem;
+
+                }
+
+                .button:hover, .button:active {
+                    cursor: pointer;
+                    box-shadow: 1px 1px;
+                    transition: box-shadow 0.3s ease-in-out;
+                }
+
+                .go {
+                    background-color: $green;
+                }
+
+                .prev, .next {
+                    background-color: $blue;
+                }
+            }
+        }
+
+        .project-name {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .project-description {
+            padding: 0 2rem;
+            font-size: 1.5rem;
+        }
+    }
+}
