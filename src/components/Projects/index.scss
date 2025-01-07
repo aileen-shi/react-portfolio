@@ -109,3 +109,45 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .project-container {
+
+        .varied-dots {
+            left: 2rem;
+        }
+
+        .card {
+            width: 60vw;
+
+            .banner {
+                
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+
+            .slideshow-container {
+
+                .button-container {
+                    .button {
+                        font-size: 2rem;
+                        padding: 1rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px)  {
+    .project-container {
+        .card {
+            .slideshow-container {
+                .button-container {
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}
