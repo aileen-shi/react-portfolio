@@ -39,7 +39,7 @@ const Projects = () => {
             <Sparkle className="sparkle" />
             <Shape className="shape" />
 
-            <div className="card">
+            <div className="card project-card">
                 <div className="banner">
                     <h1>projects</h1>
                 </div>

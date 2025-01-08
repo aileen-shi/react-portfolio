@@ -143,8 +143,12 @@
 
 @media screen and (max-width: 500px)  {
     .project-container {
-        .card {
+        .project-card {
+            min-width: 30rem;
             .slideshow-container {
+                .slide {
+                    min-width: 20rem;
+                }
                 .button-container {
                     margin-top: 0.5rem;
                 }

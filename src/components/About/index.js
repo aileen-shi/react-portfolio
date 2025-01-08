@@ -27,11 +27,12 @@ const About = () => {
                     <h1>skills</h1>
                 </div>
                 <div className="button-grid">
-                    <div class="col">C/C++/C#</div>
+                    <div class="col">C/C++</div>
                     <div class="col">Python</div>
                     <div class="col">HTML</div>
                     <div class="col">CSS</div>
                     <div class="col">JavaScript</div>
+                    <div class="col">React</div>
                     <div class="col">Django</div>
                     <div class="col">SQL</div>
                     <div class="col">AWS</div>
