@@ -1,7 +1,7 @@
 import './index.scss';
 import { useState } from "react";
 import pandasoft from '../../assets/images/pandasoft.png';
-import test from '../../assets/images/test.png';
+import palette from '../../assets/images/color-palette.png';
 import { ReactComponent as VariedDots } from '../../assets/icons/varied-dots.svg';
 import { ReactComponent as Sparkle } from '../../assets/icons/sparkle.svg';
 import { ReactComponent as Shape } from '../../assets/icons/shape.svg';
@@ -13,13 +13,15 @@ const Projects = () => {
             name: "PandaSoft",
             image: pandasoft, 
             alt: "PandaSoft landing page", 
-            description: "A web app for truckers to join companies and earn rewards using React, Django, and iTunes API that was deployed on AWS."
+            description: "A web app for truckers to join companies and earn rewards using React, Django, and iTunes API that was deployed on AWS.",
+            link: "https://github.com/aileen-shi/PandaSoft"
         },
         {
-            name: "Test Project",
-            image: test,
-            alt: "Test image",
-            description: "testing description"
+            name: "Color Palette Generator",
+            image: palette,
+            alt: "Color palette generator screenshot",
+            description: "A python script that uses a k-means clustering algorithm to extract the dominant colors from an image to generate a color palette.",
+            link: "https://github.com/aileen-shi/dominant-color-extractor"
         }
 
     ];
@@ -50,7 +52,9 @@ const Projects = () => {
 
                     <div className="button-container">
                         <button className="button prev" onClick={handlePrev}>{'\u003c'}</button>
-                        <button className="button go">go</button>
+                        <a href={slides[slideIndex].link}>
+                            <button className="button go" target="_blank">go</button>
+                        </a>
                         <button className="button next" onClick={handleNext}>{'\u003e'}</button>
                     </div>
                 </div>
