@@ -49,7 +49,7 @@ const Navbar = () => {
                 </nav>
             </div>
                 {hamburgerOpen === true && (
-                    <MobileNav />
+                    <MobileNav toggleHamburger={toggleHamburger}/>
                 )}
         </div>
     )
