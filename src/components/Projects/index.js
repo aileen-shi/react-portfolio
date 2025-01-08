@@ -2,6 +2,7 @@ import './index.scss';
 import { useState } from "react";
 import pandasoft from '../../assets/images/pandasoft.png';
 import palette from '../../assets/images/color-palette.png';
+import pokeball from '../../assets/images/pokeball.png';
 import { ReactComponent as VariedDots } from '../../assets/icons/varied-dots.svg';
 import { ReactComponent as Sparkle } from '../../assets/icons/sparkle.svg';
 import { ReactComponent as Shape } from '../../assets/icons/shape.svg';
@@ -13,8 +14,15 @@ const Projects = () => {
             name: "PandaSoft",
             image: pandasoft, 
             alt: "PandaSoft landing page", 
-            description: "A web app for truckers to join companies and earn rewards using React, Django, and iTunes API that was deployed on AWS.",
+            description: "A web app for truckers to apply to sponsor companies and earn points for good driving. Rewards are sourced from the iTunes API. The web app uses React and Django and was deployed on AWS using a EC2 and RDS",
             link: "https://github.com/aileen-shi/PandaSoft"
+        },
+        {
+            name: "Pokemon Card Collector",
+            image: pokeball,
+            alt: "Pokeball",
+            description: "A web app that allows users to search for and save different Pokemon cards using the Pokemon TCG API to their account. The web app uses vanilla HTML/CSS and PHP",
+            link: "https://github.com/aileen-shi/3750-class-docs/tree/main/project2"
         },
         {
             name: "Color Palette Generator",
