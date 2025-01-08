@@ -1,0 +1,213 @@
+@import '../../assets/styles/variables';
+
+.contact-container {
+    margin: auto;
+    margin-bottom: 15rem;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: flex-start;
+    position: relative;
+    flex-wrap: wrap;
+
+    .flower {
+        position: absolute;
+        top: -20rem;
+        left: -15rem;
+        z-index: -1;
+
+        path {
+            fill: $green;
+        }
+    }
+
+    .sparkle {
+        position: absolute;
+        width: 15rem;
+        z-index: -1;
+        top: 45rem;
+        left: 35rem;
+    }
+    
+    .dots {
+        position: absolute;
+        width: 20rem;
+        top: -40rem;
+        left: 70vw;
+        z-index: -1;
+
+        path {
+            fill: $blue-darker;
+        }
+    }
+
+    .card {
+        background-color: $white;
+        color: $text-color;
+        border: 5px solid $text-color;
+        padding-bottom: 2rem;
+
+        .banner {
+            background-color: $red;
+            
+            .banner-text {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .link-card {
+        width: 25vw;
+
+        .banner {
+            width:8vw;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+
+            .link {
+                color: $text-color;
+                font-size: 2.5rem;
+                padding: 1rem 2rem;
+                background-color: $blue;
+                border-radius: 25px;
+                border: 2px solid $text-color;
+                box-shadow: -10px 5px;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+            .link:active, .link:hover {
+                cursor: pointer;
+                box-shadow: -5px 2px;
+                transition: box-shadow 0.3s ease-in-out;
+            }
+        }
+    }
+
+    .contact-card {
+        width: 40vw;
+
+        .banner {
+            width: 15vw;
+        }
+
+        .form {
+            width: 70%;
+            margin: auto;
+
+            .form-field {
+                margin-bottom: 3rem;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                label {
+                    color: $text-color;
+                    font-size: 3rem;
+                    width: 10vw;
+                }
+
+                .field {
+                    flex-grow: 1;
+                    padding: 1rem;
+                    border: 2px solid $text-color;
+                }
+
+                .message {
+                    resize: none;
+                    height: 10rem;
+                }
+            }
+
+            .send {
+                font-size: 2.5rem;
+                padding: 1.5rem;
+                background-color: $green;
+                border: 2px solid $text-color;
+                box-shadow: -3px 5px;
+                transition: box-shadow 0.3s ease-in-out;
+                margin: auto;
+                width: 100%;
+                margin-bottom: 5rem;
+            }
+
+            .send:active, .send:hover {
+                cursor: pointer;
+                box-shadow: 1px 1px;
+            }
+
+            span {
+                font-size: 1rem;
+                color: $text-color;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-container {
+
+        .card {
+
+            .banner {
+
+                .banner-text {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .link-card {
+            min-width: 30rem;
+
+            .banner {
+                width: 15vw;
+                min-width: 15rem;
+            }
+
+            .link-container {
+                
+                .link {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .contact-card {
+            min-width: 30rem;
+            .banner {
+                width: 25vw;
+                min-width: 20rem;
+            }
+
+            .form {
+                .form-field {
+                    margin-bottom: 1rem;
+                    label {
+                        font-size: 2rem;
+                        padding: 0;
+                    }
+
+                    .field  {
+                        padding: 0.5rem;
+                    }
+                }
+
+                .send {
+                    font-size: 2rem;
+                    padding: 1rem;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}

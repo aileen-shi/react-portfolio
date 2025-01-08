@@ -2,6 +2,7 @@
 
 .project-container {
     position: relative;
+    margin-bottom: 30rem;
 
     .varied-dots {
         position: absolute;
@@ -79,13 +80,13 @@
                     box-shadow: -3px 5px;
                     color: $text-color;
                     font-size: 3rem;
+                    transition: box-shadow 0.3s ease-in-out;
 
                 }
 
                 .button:hover, .button:active {
                     cursor: pointer;
                     box-shadow: 1px 1px;
-                    transition: box-shadow 0.3s ease-in-out;
                 }
 
                 .go {

@@ -16,9 +16,9 @@ const MobileNav = () => {
                     </a>
                 </li>
                 <li>
-                    <NavLink exact="true" activeclassname="active" to="/contact">
+                    <a href="#contact">
                         <button id="contact-button">contact</button>
-                    </NavLink>
+                    </a>
                 </li>
             </ul>
         </div>

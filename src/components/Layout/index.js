@@ -3,6 +3,7 @@ import Navbar from '../Navbar';
 import Intro from '../Intro';
 import About from '../About';
 import Projects from '../Projects';
+import Contact from '../Contact';
 
 const Layout = () => {
     return (
@@ -17,6 +18,9 @@ const Layout = () => {
                 </section>
                 <section id="projects">
                     <Projects />
+                </section>
+                <section id="contact">
+                    <Contact />
                 </section>
             </div>
         </>
